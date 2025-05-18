@@ -1,9 +1,5 @@
-# Price Comparison Webapp -
-Click the Image to view the demo Video: 
+# Bargain Buddy
 
-<a href="https://drive.google.com/file/d/14WAAh-vXXePhV-sstgYHbVvwwULjGGuC/view?usp=sharing">
-  <img src="https://img.freepik.com/free-vector/minimal-white-style-video-player-template-design_1017-25481.jpg?size=626&ext=jpg&ga=GA1.1.1803636316.1700784000&semt=ais" alt="Video Thumbnail" width="350" height="180">
-</a>
  <br>
 This web application, developed with <b>Node.js and Express</b>.js, facilitates price comparison across multiple websites by aggregating product details via APIs.
 <br> &ensp; &#9745; Filter (highest price/lowest price/highest review & rating) [default: none]
@@ -34,8 +30,8 @@ Before you begin, ensure you have the following installed:
 ## Getting Started
 1. Clone the repository to your local machine, and navigate into it,
 ```
-git clone git@github.com:prabhxjottsingh/price-compare-webapp.git
-cd .\price-compare-webapp\
+git clone https://github.com/kartikgarg3000/BargainBuddy.git
+cd .\Bargain Buddy\
 ```
 2.Run the following command to install all the requirements for the applicatin to run on your machine
 ```

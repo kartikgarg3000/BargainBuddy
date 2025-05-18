@@ -16,7 +16,17 @@ const products = {
     { id: "7", name: "Samsung Galaxy S24 Ultra" },
     { id: "8", name: "PlayStation 5" },
     { id: "9", name: "MacBook Pro M3" },
-    { id: "10", name: "OnePlus 12" }
+    { id: "10", name: "OnePlus 12" },
+    { id: "11", name: "Bose QuietComfort Headphones" },
+    { id: "12", name: "Samsung Galaxy Watch 6" },
+    { id: "13", name: "Nikon Z5 Mirrorless Camera" },
+    { id: "14", name: "Instant Pot Duo 7-in-1" },
+    { id: "15", name: "Fitbit Charge 6" },
+    { id: "16", name: "Xbox Series X" },
+    { id: "17", name: "GoPro Hero 12" },
+    { id: "18", name: "Dyson V15 Detect Vacuum" },
+    { id: "19", name: "HP LaserJet Pro Printer" },
+    { id: "20", name: "Logitech MX Master 3S" }
   ]
 };
 

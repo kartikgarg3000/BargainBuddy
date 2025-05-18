@@ -8,21 +8,30 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build": "echo 'Build step completed'",
+    "build": "npm install && npm run vercel-build",
     "vercel-build": "echo 'Vercel build completed'"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
   },
-   "author": "Kartik Garg",
-  "license": "ISC",
+  "author": "Kartik Garg",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kartikgarg3000/BargainBuddy.git"
+    "url": "https://github.com/kartikgarg3000/BargainBuddy.git"
+  },
+  "keywords": [
+    "price-comparison",
+    "ecommerce",
+    "nodejs",
+    "express"
+  ],
+  "description": "A price comparison web application for various e-commerce platforms"
 }

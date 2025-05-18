@@ -6,25 +6,23 @@
     "node": "18.x"
   },
   "scripts": {
-    "dev": "nodemon index.js",
     "start": "node index.js",
+    "dev": "nodemon index.js",
     "build": "echo 'Build step completed'",
     "vercel-build": "echo 'Vercel build completed'"
   },
   "dependencies": {
-    "body-parser": "^2.2.0",
-    "ejs": "^3.1.10",
-    "express": "^4.21.2",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1",
-    "concurrently": "^9.1.2"
+    "nodemon": "^3.0.1"
   },
-  "author": "Kartik Garg",
+   "author": "Kartik Garg",
   "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kartikgarg3000/BargainBuddy.git"
-  }
 }

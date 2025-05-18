@@ -1,10 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const routes = require('./src/routes');
 const path = require('path');
+const productService = require('./src/services/productService');
 
 const app = express();
-const PORT = process.env.PORT || 8000; // Use environment variable for port
+const PORT = process.env.PORT || 8000;
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -13,14 +13,67 @@ app.set('views', path.join(__dirname, 'src/views'));
 // Serve static files
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Import routes
-app.use('/', routes);
+// Routes
+app.get('/', (req, res) => {
+  const productsArray = productService.getProducts();
+  const companiesArray = productService.getCompanies();
+  
+  res.render('index', {
+    productsArray,
+    companiesArray
+  });
+});
 
-// Vercel requires module.exports for serverless functions
+app.post('/compare', (req, res) => {
+  const { productSelect, selectedCompanies } = req.body;
+  const companies = Array.isArray(selectedCompanies) ? selectedCompanies : [selectedCompanies];
+  
+  // Import product data
+  const productData = require('./db.json');
+  
+  let requestedData = [];
+  companies.forEach(companyId => {
+    const company = productService.getCompanies().find(c => c.id === companyId);
+    if (company && productData[company.name]) {
+      const product = productData[company.name].find(p => p.id === productSelect);
+      if (product) {
+        requestedData.push(product);
+      }
+    }
+  });
+
+  res.render('comparisonPage', {
+    requestedData,
+    productSelect,
+    selectedCompanies: companies
+  });
+});
+
+// Error handling
+app.use((req, res, next) => {
+  res.status(404).render('error', {
+    error: {
+      status: 404,
+      message: 'Page not found'
+    }
+  });
+});
+
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).render('error', {
+    error: {
+      status: 500,
+      message: 'Internal server error'
+    }
+  });
+});
+
+// Export for Vercel
 module.exports = app;
 
-// Only listen locally when not in Vercel environment
-if (process.env.VERCEL !== '1') {
+// Start server locally
+if (process.env.NODE_ENV !== 'production') {
   app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
   });

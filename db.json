@@ -12,63 +12,203 @@
     { "id": "2", "name": "Google Smart Home" },
     { "id": "3", "name": "JBL Noise Cancellation Earbuds" },
     { "id": "4", "name": "Sony 4K Ultra HD TV" },
-    { "id": "5", "name": "Apple iPhone 13" },
-    { "id": "6", "name": "Dell XPS 15 Laptop" }
+    { "id": "5", "name": "Apple iPhone 15 Pro" },
+    { "id": "6", "name": "Dell XPS 15 Laptop" },
+    { "id": "7", "name": "Samsung Galaxy S24 Ultra" },
+    { "id": "8", "name": "PlayStation 5" },
+    { "id": "9", "name": "MacBook Pro M3" },
+    { "id": "10", "name": "OnePlus 12" },
+    { "id": "11", "name": "Bose QuietComfort Headphones" },
+    { "id": "12", "name": "Samsung Galaxy Watch 6" },
+    { "id": "13", "name": "Nikon Z5 Mirrorless Camera" },
+    { "id": "14", "name": "Instant Pot Duo 7-in-1" },
+    { "id": "15", "name": "Fitbit Charge 6" },
+    { "id": "16", "name": "Xbox Series X" },
+    { "id": "17", "name": "GoPro Hero 12" },
+    { "id": "18", "name": "Dyson V15 Detect Vacuum" },
+    { "id": "19", "name": "HP LaserJet Pro Printer" },
+    { "id": "20", "name": "Logitech MX Master 3S" }
   ],
 
   "amazon": [
     {
       "id": "1",
-      "title": "Washing Machine LG",
-      "url": "https://amazon.in",
-      "total_review_count": "70",
-      "rating": "4.5",
-      "price": "100000",
+      "title": "LG 8kg AI Direct Drive Washing Machine",
+      "url": "https://www.amazon.in/LG-Fully-Automatic-FHM1408BDL-Technology/dp/B09Q5PS4GQ/",
+      "total_review_count": "1270",
+      "rating": "4.6",
+      "price": "45999",
       "website": "https://amazon.in"
     },
     {
       "id": "2",
-      "title": "Google Smart Home",
-      "url": "https://amazon.in",
-      "total_review_count": "1000",
-      "rating": "3.9",
-      "price": "9900",
+      "title": "Google Nest Hub (2nd Gen)",
+      "url": "https://www.amazon.in/Google-Generation-Assistant-Control-Carbon/dp/B094LJXGDX/",
+      "total_review_count": "2100",
+      "rating": "4.2",
+      "price": "12999",
       "website": "https://amazon.in"
     },
     {
       "id": "3",
-      "title": "JBL Noise Cancellation Earbuds",
-      "url": "https://amazon.in",
-      "total_review_count": "1060",
+      "title": "JBL Live Pro 2 TWS",
+      "url": "https://www.amazon.in/JBL-Live-Pro-Cancelling-Earbuds/dp/B09WJPR3XI/",
+      "total_review_count": "3060",
       "rating": "4.7",
-      "price": "17999",
+      "price": "14999",
       "website": "https://amazon.in"
     },
     {
       "id": "4",
-      "title": "Sony 4K Ultra HD TV",
-      "url": "https://amazon.in",
-      "total_review_count": "800",
-      "rating": "4.6",
-      "price": "150000",
+      "title": "Sony Bravia 65 inch 4K Ultra HD TV",
+      "url": "https://www.amazon.in/Sony-Bravia-inches-Google-KD-65X74L/dp/B0C1GX93VB/",
+      "total_review_count": "1800",
+      "rating": "4.8",
+      "price": "89999",
       "website": "https://amazon.in"
     },
     {
       "id": "5",
-      "title": "Apple iPhone 13",
-      "url": "https://amazon.in",
-      "total_review_count": "2500",
+      "title": "Apple iPhone 15 Pro 256GB",
+      "url": "https://www.amazon.in/Apple-iPhone-Pro-256-Natural/dp/B0CHX2F5QT/",
+      "total_review_count": "4500",
       "rating": "4.8",
-      "price": "79999",
+      "price": "134900",
       "website": "https://amazon.in"
     },
     {
       "id": "6",
-      "title": "Dell XPS 15 Laptop",
-      "url": "https://amazon.in",
-      "total_review_count": "1200",
+      "title": "Dell XPS 15 (12th Gen i9)",
+      "url": "https://www.amazon.in/Dell-15-6-inch-i9-12900HK-RTX-3050Ti-XPS-9520/dp/B0BV24RDFP/",
+      "total_review_count": "1500",
+      "rating": "4.6",
+      "price": "189999",
+      "website": "https://amazon.in"
+    },
+    {
+      "id": "7",
+      "title": "Samsung Galaxy S24 Ultra",
+      "url": "https://www.amazon.in/Samsung-Galaxy-Ultra-256GB-Storage/dp/B0CQPZTZ6Y/",
+      "total_review_count": "2800",
+      "rating": "4.7",
+      "price": "129999",
+      "website": "https://amazon.in"
+    },
+    {
+      "id": "8",
+      "title": "PlayStation 5 Digital Edition",
+      "url": "https://www.amazon.in/PlayStation-5-Digital-Edition-CFI-1208B01R/dp/B0BTNP4XQ8/",
+      "total_review_count": "5600",
+      "rating": "4.9",
+      "price": "49999",
+      "website": "https://amazon.in"
+    },
+    {
+      "id": "9",
+      "title": "MacBook Pro M3",
+      "url": "https://www.amazon.in/Apple-2024-MacBook-Laptop-chip/dp/B0CX21P5VQ/",
+      "total_review_count": "1900",
+      "rating": "4.8",
+      "price": "169900",
+      "website": "https://amazon.in"
+    },
+    {
+      "id": "10",
+      "title": "OnePlus 12 5G",
+      "url": "https://www.amazon.in/OnePlus-Flowy-Emerald-256GB-Storage/dp/B0CPQQ1NFZ/",
+      "total_review_count": "3200",
+      "rating": "4.6",
+      "price": "64999",
+      "website": "https://amazon.in"
+    },
+    {
+      "id": "11",
+      "title": "Bose QuietComfort 45 Wireless Headphones",
+      "url": "https://www.amazon.in/Bose-QuietComfort-45-Bluetooth-Cancelling/dp/B098FKXT8L/",
+      "total_review_count": "4200",
+      "rating": "4.7",
+      "price": "28990",
+      "website": "https://amazon.in"
+    },
+    {
+      "id": "12",
+      "title": "Samsung Galaxy Watch6 Classic 47mm",
+      "url": "https://www.amazon.in/Samsung-Galaxy-Watch6-Classic-Bluetooth/dp/B0C6J1DQ2Y/",
+      "total_review_count": "1800",
       "rating": "4.5",
-      "price": "130000",
+      "price": "36999",
+      "website": "https://amazon.in"
+    },
+    {
+      "id": "13",
+      "title": "Nikon Z5 Full-Frame Mirrorless Camera",
+      "url": "https://www.amazon.in/Nikon-Z5-Mirrorless-Camera-Body/dp/B08C9ZKV7G/",
+      "total_review_count": "950",
+      "rating": "4.6",
+      "price": "112990",
+      "website": "https://amazon.in"
+    },
+    {
+      "id": "14",
+      "title": "Instant Pot Duo 7-in-1 Electric Pressure Cooker",
+      "url": "https://www.amazon.in/Instant-Pot-Duo-Electric-Stainless/dp/B01B1VC13K/",
+      "total_review_count": "12500",
+      "rating": "4.7",
+      "price": "8999",
+      "website": "https://amazon.in"
+    },
+    {
+      "id": "15",
+      "title": "Fitbit Charge 6 Fitness Tracker",
+      "url": "https://www.amazon.in/Fitbit-Charge-Fitness-Tracker-Metrics/dp/B0CGXZ3X4N/",
+      "total_review_count": "3200",
+      "rating": "4.3",
+      "price": "14990",
+      "website": "https://amazon.in"
+    },
+    {
+      "id": "16",
+      "title": "Xbox Series X 1TB Console",
+      "url": "https://www.amazon.in/Xbox-Series-X-1TB-Consoles/dp/B08H75RTZ8/",
+      "total_review_count": "4800",
+      "rating": "4.8",
+      "price": "54990",
+      "website": "https://amazon.in"
+    },
+    {
+      "id": "17",
+      "title": "GoPro HERO12 Black Action Camera",
+      "url": "https://www.amazon.in/GoPro-HERO12-Black-Waterproof-Stabilization/dp/B0CDQZJ4Q5/",
+      "total_review_count": "1500",
+      "rating": "4.5",
+      "price": "45990",
+      "website": "https://amazon.in"
+    },
+    {
+      "id": "18",
+      "title": "Dyson V15 Detect Absolute Vacuum Cleaner",
+      "url": "https://www.amazon.in/Dyson-Detect-Absolute-Cleaner-Yellow/dp/B08ZRX3P9W/",
+      "total_review_count": "2800",
+      "rating": "4.7",
+      "price": "59900",
+      "website": "https://amazon.in"
+    },
+    {
+      "id": "19",
+      "title": "HP LaserJet Pro M283fdw Wireless Printer",
+      "url": "https://www.amazon.in/HP-LaserJet-Pro-M283fdw-Wireless/dp/B09Q5PS4GQ/",
+      "total_review_count": "2100",
+      "rating": "4.4",
+      "price": "28999",
+      "website": "https://amazon.in"
+    },
+    {
+      "id": "20",
+      "title": "Logitech MX Master 3S Wireless Mouse",
+      "url": "https://www.amazon.in/Logitech-Master-3S-Wireless-Mouse/dp/B09WJPR3XI/",
+      "total_review_count": "4500",
+      "rating": "4.8",
+      "price": "9999",
       "website": "https://amazon.in"
     }
   ],
@@ -76,227 +216,731 @@
   "flipkart": [
     {
       "id": "1",
-      "title": "Washing Machine LG",
-      "url": "https://flipkart.in",
-      "total_review_count": "67",
-      "rating": "4.23",
-      "price": "100500",
-      "website": "https://flipkart.in"
+      "title": "LG 8kg Front Load Washer",
+      "url": "https://www.flipkart.com/lg-8-kg-fully-automatic-front-load-washing-machine-silver/p/itm4f12e6e760e58",
+      "total_review_count": "1167",
+      "rating": "4.4",
+      "price": "44999",
+      "website": "https://flipkart.com"
     },
     {
       "id": "2",
-      "title": "Google Smart Home",
-      "url": "https://flipkart.in",
+      "title": "Google Nest Hub",
+      "url": "https://www.flipkart.com/google-nest-hub-2nd-gen-smart-display-assistant/p/itm8e7f0b71c1934",
       "total_review_count": "1900",
-      "rating": "3.78",
-      "price": "9999",
-      "website": "https://flipkart.in"
+      "rating": "4.1",
+      "price": "13499",
+      "website": "https://flipkart.com"
     },
     {
       "id": "3",
-      "title": "JBL Noise Cancellation Earbuds",
-      "url": "https://flipkart.in",
-      "total_review_count": "1360",
-      "rating": "4.3",
-      "price": "14999",
-      "website": "https://flipkart.in"
+      "title": "JBL Live Pro 2",
+      "url": "https://www.flipkart.com/jbl-live-pro-2-tws-bluetooth-headset/p/itm265c6b85a4973",
+      "total_review_count": "2960",
+      "rating": "4.6",
+      "price": "13999",
+      "website": "https://flipkart.com"
     },
     {
       "id": "4",
-      "title": "Sony 4K Ultra HD TV",
-      "url": "https://flipkart.in",
-      "total_review_count": "900",
-      "rating": "4.5",
-      "price": "155000",
-      "website": "https://flipkart.in"
+      "title": "Sony Bravia 65\" 4K",
+      "url": "https://www.flipkart.com/sony-bravia-164-cm-65-inch-ultra-hd-4k-led-smart-tv-kd-65x74l/p/itm36ff702b34115",
+      "total_review_count": "1700",
+      "rating": "4.7",
+      "price": "88999",
+      "website": "https://flipkart.com"
     },
     {
       "id": "5",
-      "title": "Apple iPhone 13",
-      "url": "https://flipkart.in",
-      "total_review_count": "2700",
-      "rating": "4.7",
-      "price": "78999",
-      "website": "https://flipkart.in"
+      "title": "iPhone 15 Pro",
+      "url": "https://www.flipkart.com/apple-iphone-15-pro-natural-titanium-256-gb/p/itm6538835c61095",
+      "total_review_count": "4200",
+      "rating": "4.8",
+      "price": "133900",
+      "website": "https://flipkart.com"
     },
     {
       "id": "6",
-      "title": "Dell XPS 15 Laptop",
-      "url": "https://flipkart.in",
-      "total_review_count": "1100",
+      "title": "Dell XPS 15",
+      "url": "https://www.flipkart.com/dell-xps-15-core-i9-12th-gen-32-gb-1-tb-ssd-windows-11-home-8-gb-graphics-nvidia-geforce-rtx-3050-ti-9520-thin-light-laptop/p/itm4f12e6e760e58",
+      "total_review_count": "1400",
+      "rating": "4.5",
+      "price": "188999",
+      "website": "https://flipkart.com"
+    },
+    {
+      "id": "7",
+      "title": "Samsung S24 Ultra",
+      "url": "https://www.flipkart.com/samsung-galaxy-s24-ultra-titanium-gray-256-gb/p/itm6538835c61095",
+      "total_review_count": "2600",
+      "rating": "4.7",
+      "price": "128999",
+      "website": "https://flipkart.com"
+    },
+    {
+      "id": "8",
+      "title": "PS5 Digital Edition",
+      "url": "https://www.flipkart.com/sony-playstation-5-digital-edition-cfi-1208b/p/itmc3e8c6e45805f",
+      "total_review_count": "5400",
+      "rating": "4.8",
+      "price": "48999",
+      "website": "https://flipkart.com"
+    },
+    {
+      "id": "9",
+      "title": "MacBook Pro M3",
+      "url": "https://www.flipkart.com/apple-2024-macbook-pro-apple-m3-macos-sonoma/p/itm123456789",
+      "total_review_count": "1800",
+      "rating": "4.8",
+      "price": "168900",
+      "website": "https://flipkart.com"
+    },
+    {
+      "id": "10",
+      "title": "OnePlus 12",
+      "url": "https://www.flipkart.com/oneplus-12-5g-flowy-emerald-256-gb/p/itm123456789",
+      "total_review_count": "3100",
+      "rating": "4.5",
+      "price": "63999",
+      "website": "https://flipkart.com"
+    },
+    {
+      "id": "11",
+      "title": "Bose QuietComfort 45 Bluetooth Headphones",
+      "url": "https://www.flipkart.com/bose-quietcomfort-45-bluetooth-headset/p/itm987654321",
+      "total_review_count": "3800",
+      "rating": "4.6",
+      "price": "27990",
+      "website": "https://flipkart.com"
+    },
+    {
+      "id": "12",
+      "title": "Samsung Galaxy Watch6 Classic 47mm BT",
+      "url": "https://www.flipkart.com/samsung-galaxy-watch6-classic-47mm-bt/p/itm876543210",
+      "total_review_count": "1500",
       "rating": "4.4",
-      "price": "135000",
-      "website": "https://flipkart.in"
+      "price": "35999",
+      "website": "https://flipkart.com"
+    },
+    {
+      "id": "13",
+      "title": "Nikon Z5 Mirrorless Camera Body",
+      "url": "https://www.flipkart.com/nikon-z5-mirrorless-camera-body/p/itm765432109",
+      "total_review_count": "820",
+      "rating": "4.5",
+      "price": "109990",
+      "website": "https://flipkart.com"
+    },
+    {
+      "id": "14",
+      "title": "Instant Pot Duo 7-in-1 Pressure Cooker",
+      "url": "https://www.flipkart.com/instant-pot-duo-7-1-pressure-cooker/p/itm654321098",
+      "total_review_count": "11200",
+      "rating": "4.6",
+      "price": "8499",
+      "website": "https://flipkart.com"
+    },
+    {
+      "id": "15",
+      "title": "Fitbit Charge 6 Advanced Fitness Tracker",
+      "url": "https://www.flipkart.com/fitbit-charge-6-advanced-fitness-tracker/p/itm543210987",
+      "total_review_count": "2900",
+      "rating": "4.2",
+      "price": "14490",
+      "website": "https://flipkart.com"
+    },
+    {
+      "id": "16",
+      "title": "Xbox Series X 1TB Gaming Console",
+      "url": "https://www.flipkart.com/xbox-series-x-1tb-gaming-console/p/itm432109876",
+      "total_review_count": "4500",
+      "rating": "4.7",
+      "price": "52990",
+      "website": "https://flipkart.com"
+    },
+    {
+      "id": "17",
+      "title": "GoPro HERO12 Black Action Camera",
+      "url": "https://www.flipkart.com/gopro-hero12-black-action-camera/p/itm321098765",
+      "total_review_count": "1300",
+      "rating": "4.4",
+      "price": "44990",
+      "website": "https://flipkart.com"
+    },
+    {
+      "id": "18",
+      "title": "Dyson V15 Detect Absolute Cordless Vacuum",
+      "url": "https://www.flipkart.com/dyson-v15-detect-absolute-cordless-vacuum/p/itm210987654",
+      "total_review_count": "2500",
+      "rating": "4.6",
+      "price": "58900",
+      "website": "https://flipkart.com"
+    },
+    {
+      "id": "19",
+      "title": "HP LaserJet Pro M283fdw All-in-One Printer",
+      "url": "https://www.flipkart.com/hp-laserjet-pro-m283fdw-all-in-one-printer/p/itm109876543",
+      "total_review_count": "1900",
+      "rating": "4.3",
+      "price": "27999",
+      "website": "https://flipkart.com"
+    },
+    {
+      "id": "20",
+      "title": "Logitech MX Master 3S Advanced Wireless Mouse",
+      "url": "https://www.flipkart.com/logitech-mx-master-3s-advanced-wireless-mouse/p/itm098765432",
+      "total_review_count": "4200",
+      "rating": "4.7",
+      "price": "9499",
+      "website": "https://flipkart.com"
     }
   ],
 
   "walmart": [
     {
       "id": "1",
-      "title": "Washing Machine LG",
-      "url": "https://walmart.in",
-      "total_review_count": "63",
-      "rating": "4.45",
-      "price": "105000",
-      "website": "https://walmart.in"
+      "title": "LG 8kg Inverter Front Load Washing Machine",
+      "url": "https://www.walmart.com/ip/LG-8kg-Inverter-Front-Load-Washing-Machine/123456789",
+      "total_review_count": "850",
+      "rating": "4.3",
+      "price": "46999",
+      "website": "https://walmart.com"
     },
     {
       "id": "2",
-      "title": "Google Smart Home",
-      "url": "https://walmart.in",
-      "total_review_count": "1400",
-      "rating": "3.50",
-      "price": "9990",
-      "website": "https://walmart.in"
+      "title": "Google Nest Hub (2nd Generation)",
+      "url": "https://www.walmart.com/ip/Google-Nest-Hub-2nd-Generation/987654321",
+      "total_review_count": "1200",
+      "rating": "4.0",
+      "price": "13599",
+      "website": "https://walmart.com"
     },
     {
       "id": "3",
-      "title": "JBL Noise Cancellation Earbuds",
-      "url": "https://walmart.in",
-      "total_review_count": "1367",
-      "rating": "4.9",
-      "price": "11999",
-      "website": "https://walmart.in"
+      "title": "JBL Live Pro+ TWS Earbuds",
+      "url": "https://www.walmart.com/ip/JBL-Live-Pro-TWS-Earbuds/567891234",
+      "total_review_count": "2100",
+      "rating": "4.5",
+      "price": "14599",
+      "website": "https://walmart.com"
     },
     {
       "id": "4",
-      "title": "Sony 4K Ultra HD TV",
-      "url": "https://walmart.in",
-      "total_review_count": "850",
-      "rating": "4.7",
-      "price": "152000",
-      "website": "https://walmart.in"
+      "title": "Sony Bravia 65\" 4K Smart TV",
+      "url": "https://www.walmart.com/ip/Sony-Bravia-65-4K-Smart-TV/345678912",
+      "total_review_count": "1500",
+      "rating": "4.6",
+      "price": "91999",
+      "website": "https://walmart.com"
     },
     {
       "id": "5",
-      "title": "Apple iPhone 13",
-      "url": "https://walmart.in",
-      "total_review_count": "2600",
-      "rating": "4.9",
-      "price": "79900",
-      "website": "https://walmart.in"
+      "title": "Apple iPhone 15 Pro (256GB)",
+      "url": "https://www.walmart.com/ip/Apple-iPhone-15-Pro-256GB/789123456",
+      "total_review_count": "3800",
+      "rating": "4.7",
+      "price": "135900",
+      "website": "https://walmart.com"
     },
     {
       "id": "6",
-      "title": "Dell XPS 15 Laptop",
-      "url": "https://walmart.in",
-      "total_review_count": "1250",
+      "title": "Dell XPS 15 Laptop (12th Gen i9)",
+      "url": "https://www.walmart.com/ip/Dell-XPS-15-Laptop-12th-Gen-i9/234567891",
+      "total_review_count": "1100",
+      "rating": "4.4",
+      "price": "191999",
+      "website": "https://walmart.com"
+    },
+    {
+      "id": "7",
+      "title": "Samsung Galaxy S24 Ultra 5G",
+      "url": "https://www.walmart.com/ip/Samsung-Galaxy-S24-Ultra-5G/456789123",
+      "total_review_count": "2400",
       "rating": "4.6",
-      "price": "132000",
-      "website": "https://walmart.in"
+      "price": "131999",
+      "website": "https://walmart.com"
+    },
+    {
+      "id": "8",
+      "title": "Sony PlayStation 5 Digital",
+      "url": "https://www.walmart.com/ip/Sony-PlayStation-5-Digital/678912345",
+      "total_review_count": "4900",
+      "rating": "4.8",
+      "price": "50999",
+      "website": "https://walmart.com"
+    },
+    {
+      "id": "9",
+      "title": "Apple MacBook Pro M3 (14-inch)",
+      "url": "https://www.walmart.com/ip/Apple-MacBook-Pro-M3-14-inch/891234567",
+      "total_review_count": "1600",
+      "rating": "4.7",
+      "price": "171900",
+      "website": "https://walmart.com"
+    },
+    {
+      "id": "10",
+      "title": "OnePlus 12 5G (256GB)",
+      "url": "https://www.walmart.com/ip/OnePlus-12-5G-256GB/912345678",
+      "total_review_count": "2900",
+      "rating": "4.4",
+      "price": "65999",
+      "website": "https://walmart.com"
+    },
+    {
+      "id": "11",
+      "title": "Bose QuietComfort 45 Wireless NC Headphones",
+      "url": "https://www.walmart.com/ip/Bose-QuietComfort-45-Wireless-NC-Headphones/123456780",
+      "total_review_count": "3500",
+      "rating": "4.5",
+      "price": "27500",
+      "website": "https://walmart.com"
+    },
+    {
+      "id": "12",
+      "title": "Samsung Galaxy Watch6 Classic 47mm Bluetooth",
+      "url": "https://www.walmart.com/ip/Samsung-Galaxy-Watch6-Classic-47mm-Bluetooth/234567801",
+      "total_review_count": "1300",
+      "rating": "4.3",
+      "price": "34999",
+      "website": "https://walmart.com"
+    },
+    {
+      "id": "13",
+      "title": "Nikon Z5 Mirrorless Camera with 24-50mm Lens",
+      "url": "https://www.walmart.com/ip/Nikon-Z5-Mirrorless-Camera-with-24-50mm-Lens/345678012",
+      "total_review_count": "780",
+      "rating": "4.5",
+      "price": "119990",
+      "website": "https://walmart.com"
+    },
+    {
+      "id": "14",
+      "title": "Instant Pot Duo 7-in-1 Electric Pressure Cooker 6Qt",
+      "url": "https://www.walmart.com/ip/Instant-Pot-Duo-7-in-1-Electric-Pressure-Cooker-6Qt/456780123",
+      "total_review_count": "9800",
+      "rating": "4.6",
+      "price": "8799",
+      "website": "https://walmart.com"
+    },
+    {
+      "id": "15",
+      "title": "Fitbit Charge 6 Fitness and Health Tracker",
+      "url": "https://www.walmart.com/ip/Fitbit-Charge-6-Fitness-and-Health-Tracker/567801234",
+      "total_review_count": "2700",
+      "rating": "4.2",
+      "price": "13990",
+      "website": "https://walmart.com"
+    },
+    {
+      "id": "16",
+      "title": "Xbox Series X 1TB Gaming Console (Renewed)",
+      "url": "https://www.walmart.com/ip/Xbox-Series-X-1TB-Gaming-Console-Renewed/678012345",
+      "total_review_count": "4200",
+      "rating": "4.6",
+      "price": "51990",
+      "website": "https://walmart.com"
+    },
+    {
+      "id": "17",
+      "title": "GoPro HERO12 Black - Waterproof Action Camera",
+      "url": "https://www.walmart.com/ip/GoPro-HERO12-Black-Waterproof-Action-Camera/780123456",
+      "total_review_count": "1200",
+      "rating": "4.4",
+      "price": "43990",
+      "website": "https://walmart.com"
+    },
+    {
+      "id": "18",
+      "title": "Dyson V15 Detect Absolute Cordless Vacuum Cleaner",
+      "url": "https://www.walmart.com/ip/Dyson-V15-Detect-Absolute-Cordless-Vacuum-Cleaner/801234567",
+      "total_review_count": "2300",
+      "rating": "4.5",
+      "price": "57900",
+      "website": "https://walmart.com"
+    },
+    {
+      "id": "19",
+      "title": "HP LaserJet Pro M283fdw Wireless All-in-One Laser Printer",
+      "url": "https://www.walmart.com/ip/HP-LaserJet-Pro-M283fdw-Wireless-All-in-One-Laser-Printer/012345678",
+      "total_review_count": "1800",
+      "rating": "4.2",
+      "price": "26999",
+      "website": "https://walmart.com"
+    },
+    {
+      "id": "20",
+      "title": "Logitech MX Master 3S Wireless Mouse (Graphite)",
+      "url": "https://www.walmart.com/ip/Logitech-MX-Master-3S-Wireless-Mouse-Graphite/123456700",
+      "total_review_count": "4000",
+      "rating": "4.7",
+      "price": "9299",
+      "website": "https://walmart.com"
     }
   ],
 
   "indiamart": [
     {
       "id": "1",
-      "title": "Washing Machine LG",
-      "url": "https://indiamart.in",
-      "total_review_count": "59",
-      "rating": "4.35",
-      "price": "105040",
-      "website": "https://indiamart.in"
+      "title": "LG 8 Kg Fully Automatic Washing Machine",
+      "url": "https://www.indiamart.com/proddetail/lg-8-kg-fully-automatic-washing-machine-28764254888.html",
+      "total_review_count": "420",
+      "rating": "4.2",
+      "price": "43999",
+      "website": "https://indiamart.com"
     },
     {
       "id": "2",
-      "title": "Google Smart Home",
-      "url": "https://indiamart.in",
-      "total_review_count": "1260",
-      "rating": "3.78",
-      "price": "8990",
-      "website": "https://indiamart.in"
+      "title": "Google Nest Hub Smart Display",
+      "url": "https://www.indiamart.com/proddetail/google-nest-hub-smart-display-28764254889.html",
+      "total_review_count": "680",
+      "rating": "3.9",
+      "price": "12499",
+      "website": "https://indiamart.com"
     },
     {
       "id": "3",
-      "title": "JBL Noise Cancellation Earbuds",
-      "url": "https://indiamart.in",
-      "total_review_count": "1587",
-      "rating": "4.49",
-      "price": "11909",
-      "website": "https://indiamart.in"
+      "title": "JBL Live Pro 2 Wireless Earbuds",
+      "url": "https://www.indiamart.com/proddetail/jbl-live-pro-2-wireless-earbuds-28764254890.html",
+      "total_review_count": "950",
+      "rating": "4.3",
+      "price": "13499",
+      "website": "https://indiamart.com"
     },
     {
       "id": "4",
-      "title": "Sony 4K Ultra HD TV",
-      "url": "https://indiamart.in",
-      "total_review_count": "820",
-      "rating": "4.8",
-      "price": "149999",
-      "website": "https://indiamart.in"
+      "title": "Sony Bravia 65 Inch 4K LED TV",
+      "url": "https://www.indiamart.com/proddetail/sony-bravia-65-inch-4k-led-tv-28764254891.html",
+      "total_review_count": "720",
+      "rating": "4.5",
+      "price": "86999",
+      "website": "https://indiamart.com"
     },
     {
       "id": "5",
-      "title": "Apple iPhone 13",
-      "url": "https://indiamart.in",
-      "total_review_count": "2550",
-      "rating": "4.7",
-      "price": "78990",
-      "website": "https://indiamart.in"
+      "title": "Apple iPhone 15 Pro (256GB)",
+      "url": "https://www.indiamart.com/proddetail/apple-iphone-15-pro-256gb-28764254892.html",
+      "total_review_count": "2100",
+      "rating": "4.6",
+      "price": "132900",
+      "website": "https://indiamart.com"
     },
     {
       "id": "6",
-      "title": "Dell XPS 15 Laptop",
-      "url": "https://indiamart.in",
+      "title": "Dell XPS 15 Laptop (Core i9)",
+      "url": "https://www.indiamart.com/proddetail/dell-xps-15-laptop-core-i9-28764254893.html",
+      "total_review_count": "580",
+      "rating": "4.3",
+      "price": "184999",
+      "website": "https://indiamart.com"
+    },
+    {
+      "id": "7",
+      "title": "Samsung Galaxy S24 Ultra 5G",
+      "url": "https://www.indiamart.com/proddetail/samsung-galaxy-s24-ultra-5g-28764254894.html",
       "total_review_count": "1300",
+      "rating": "4.5",
+      "price": "125999",
+      "website": "https://indiamart.com"
+    },
+    {
+      "id": "8",
+      "title": "Sony PlayStation 5 Digital Edition",
+      "url": "https://www.indiamart.com/proddetail/sony-playstation-5-digital-edition-28764254895.html",
+      "total_review_count": "3200",
+      "rating": "4.7",
+      "price": "47999",
+      "website": "https://indiamart.com"
+    },
+    {
+      "id": "9",
+      "title": "Apple MacBook Pro M3 (14-inch)",
+      "url": "https://www.indiamart.com/proddetail/apple-macbook-pro-m3-14-inch-28764254896.html",
+      "total_review_count": "890",
+      "rating": "4.6",
+      "price": "165900",
+      "website": "https://indiamart.com"
+    },
+    {
+      "id": "10",
+      "title": "OnePlus 12 5G (256GB Storage)",
+      "url": "https://www.indiamart.com/proddetail/oneplus-12-5g-256gb-storage-28764254897.html",
+      "total_review_count": "1500",
+      "rating": "4.3",
+      "price": "61999",
+      "website": "https://indiamart.com"
+    },
+    {
+      "id": "11",
+      "title": "Bose QuietComfort 45 Wireless Noise Cancelling Headphones",
+      "url": "https://www.indiamart.com/proddetail/bose-quietcomfort-45-wireless-noise-cancelling-headphones-28764254898.html",
+      "total_review_count": "3100",
       "rating": "4.4",
-      "price": "134999",
-      "website": "https://indiamart.in"
+      "price": "26990",
+      "website": "https://indiamart.com"
+    },
+    {
+      "id": "12",
+      "title": "Samsung Galaxy Watch6 Classic 47mm Smartwatch",
+      "url": "https://www.indiamart.com/proddetail/samsung-galaxy-watch6-classic-47mm-smartwatch-28764254899.html",
+      "total_review_count": "1100",
+      "rating": "4.2",
+      "price": "34999",
+      "website": "https://indiamart.com"
+    },
+    {
+      "id": "13",
+      "title": "Nikon Z5 Mirrorless Camera Body with 24-70mm Lens",
+      "url": "https://www.indiamart.com/proddetail/nikon-z5-mirrorless-camera-body-with-24-70mm-lens-28764254900.html",
+      "total_review_count": "650",
+      "rating": "4.4",
+      "price": "129990",
+      "website": "https://indiamart.com"
+    },
+    {
+      "id": "14",
+      "title": "Instant Pot Duo 7-in-1 Electric Pressure Cooker 6L",
+      "url": "https://www.indiamart.com/proddetail/instant-pot-duo-7-in-1-electric-pressure-cooker-6l-28764254901.html",
+      "total_review_count": "8500",
+      "rating": "4.5",
+      "price": "7999",
+      "website": "https://indiamart.com"
+    },
+    {
+      "id": "15",
+      "title": "Fitbit Charge 6 Advanced Health & Fitness Tracker",
+      "url": "https://www.indiamart.com/proddetail/fitbit-charge-6-advanced-health-fitness-tracker-28764254902.html",
+      "total_review_count": "2400",
+      "rating": "4.1",
+      "price": "13490",
+      "website": "https://indiamart.com"
+    },
+    {
+      "id": "16",
+      "title": "Microsoft Xbox Series X 1TB Console",
+      "url": "https://www.indiamart.com/proddetail/microsoft-xbox-series-x-1tb-console-28764254903.html",
+      "total_review_count": "3800",
+      "rating": "4.6",
+      "price": "51999",
+      "website": "https://indiamart.com"
+    },
+    {
+      "id": "17",
+      "title": "GoPro HERO12 Black Action Camera with Accessories",
+      "url": "https://www.indiamart.com/proddetail/gopro-hero12-black-action-camera-with-accessories-28764254904.html",
+      "total_review_count": "1000",
+      "rating": "4.3",
+      "price": "42990",
+      "website": "https://indiamart.com"
+    },
+    {
+      "id": "18",
+      "title": "Dyson V15 Detect Absolute Cordless Vacuum Cleaner",
+      "url": "https://www.indiamart.com/proddetail/dyson-v15-detect-absolute-cordless-vacuum-cleaner-28764254905.html",
+      "total_review_count": "2100",
+      "rating": "4.4",
+      "price": "55900",
+      "website": "https://indiamart.com"
+    },
+    {
+      "id": "19",
+      "title": "HP LaserJet Pro M283fdw Wireless Color Laser Printer",
+      "url": "https://www.indiamart.com/proddetail/hp-laserjet-pro-m283fdw-wireless-color-laser-printer-28764254906.html",
+      "total_review_count": "1600",
+      "rating": "4.1",
+      "price": "25999",
+      "website": "https://indiamart.com"
+    },
+    {
+      "id": "20",
+      "title": "Logitech MX Master 3S Wireless Mouse (Graphite)",
+      "url": "https://www.indiamart.com/proddetail/logitech-mx-master-3s-wireless-mouse-graphite-28764254907.html",
+      "total_review_count": "3800",
+      "rating": "4.6",
+      "price": "8999",
+      "website": "https://indiamart.com"
     }
   ],
 
   "ebay": [
     {
       "id": "1",
-      "title": "Washing Machine LG",
-      "url": "https://ebay.in",
-      "total_review_count": "68",
-      "rating": "4.30",
-      "price": "104040",
+      "title": "LG 8kg Fully Automatic Washing Machine",
+      "url": "https://www.ebay.in/itm/LG-8kg-Fully-Automatic-Washing-Machine/12345678901",
+      "total_review_count": "380",
+      "rating": "4.1",
+      "price": "42999",
       "website": "https://ebay.in"
     },
     {
       "id": "2",
-      "title": "Google Smart Home",
-      "url": "https://ebay.in",
-      "total_review_count": "1134",
-      "rating": "3.98",
-      "price": "10990",
-      "website": "https://ebay.in"
-    },
-    {
-      "id": "3",
-      "title": "JBL Noise Cancellation Earbuds",
-      "url": "https://ebay.in",
-      "total_review_count": "1463",
-      "rating": "4.54",
+      "title": "Google Nest Hub 2nd Gen Smart Display",
+      "url": "https://www.ebay.in/itm/Google-Nest-Hub-2nd-Gen-Smart-Display/23456789012",
+      "total_review_count": "520",
+      "rating": "3.8",
       "price": "11999",
       "website": "https://ebay.in"
     },
     {
+      "id": "3",
+      "title": "JBL Live Pro 2 True Wireless Earbuds",
+      "url": "https://www.ebay.in/itm/JBL-Live-Pro-2-True-Wireless-Earbuds/34567890123",
+      "total_review_count": "870",
+      "rating": "4.2",
+      "price": "12999",
+      "website": "https://ebay.in"
+    },
+    {
       "id": "4",
-      "title": "Sony 4K Ultra HD TV",
-      "url": "https://ebay.in",
-      "total_review_count": "830",
-      "rating": "4.6",
-      "price": "153000",
+      "title": "Sony Bravia 65\" 4K Ultra HD Smart TV",
+      "url": "https://www.ebay.in/itm/Sony-Bravia-65-4K-Ultra-HD-Smart-TV/45678901234",
+      "total_review_count": "650",
+      "rating": "4.4",
+      "price": "84999",
       "website": "https://ebay.in"
     },
     {
       "id": "5",
-      "title": "Apple iPhone 13",
-      "url": "https://ebay.in",
-      "total_review_count": "2650",
-      "rating": "4.8",
-      "price": "79499",
+      "title": "Apple iPhone 15 Pro 256GB (New)",
+      "url": "https://www.ebay.in/itm/Apple-iPhone-15-Pro-256GB-New/56789012345",
+      "total_review_count": "1900",
+      "rating": "4.5",
+      "price": "129900",
       "website": "https://ebay.in"
     },
     {
       "id": "6",
-      "title": "Dell XPS 15 Laptop",
-      "url": "https://ebay.in",
-      "total_review_count": "1280",
+      "title": "Dell XPS 15 9520 Laptop (i9, 32GB, 1TB)",
+      "url": "https://www.ebay.in/itm/Dell-XPS-15-9520-Laptop-i9-32GB-1TB/67890123456",
+      "total_review_count": "490",
+      "rating": "4.2",
+      "price": "179999",
+      "website": "https://ebay.in"
+    },
+    {
+      "id": "7",
+      "title": "Samsung Galaxy S24 Ultra 5G Phone",
+      "url": "https://www.ebay.in/itm/Samsung-Galaxy-S24-Ultra-5G-Phone/78901234567",
+      "total_review_count": "1100",
+      "rating": "4.4",
+      "price": "122999",
+      "website": "https://ebay.in"
+    },
+    {
+      "id": "8",
+      "title": "Sony PlayStation 5 Digital Console",
+      "url": "https://www.ebay.in/itm/Sony-PlayStation-5-Digital-Console/89012345678",
+      "total_review_count": "4100",
+      "rating": "4.7",
+      "price": "46999",
+      "website": "https://ebay.in"
+    },
+    {
+      "id": "9",
+      "title": "Apple MacBook Pro M3 14\" Laptop",
+      "url": "https://www.ebay.in/itm/Apple-MacBook-Pro-M3-14-Laptop/90123456789",
+      "total_review_count": "750",
       "rating": "4.5",
-      "price": "136000",
+      "price": "159900",
+      "website": "https://ebay.in"
+    },
+    {
+      "id": "10",
+      "title": "OnePlus 12 5G Smartphone (256GB)",
+      "url": "https://www.ebay.in/itm/OnePlus-12-5G-Smartphone-256GB/01234567890",
+      "total_review_count": "1400",
+      "rating": "4.2",
+      "price": "59999",
+      "website": "https://ebay.in"
+    },
+    {
+      "id": "11",
+      "title": "Bose QuietComfort 45 Wireless Noise Cancelling Headphones",
+      "url": "https://www.ebay.in/itm/Bose-QuietComfort-45-Wireless-Noise-Cancelling-Headphones/12345678911",
+      "total_review_count": "3300",
+      "rating": "4.3",
+      "price": "25990",
+      "website": "https://ebay.in"
+    },
+    {
+      "id": "12",
+      "title": "Samsung Galaxy Watch6 Classic 47mm Bluetooth Smartwatch",
+      "url": "https://www.ebay.in/itm/Samsung-Galaxy-Watch6-Classic-47mm-Bluetooth-Smartwatch/23456789022",
+      "total_review_count": "1000",
+      "rating": "4.1",
+      "price": "33999",
+      "website": "https://ebay.in"
+    },
+    {
+      "id": "13",
+      "title": "Nikon Z5 Mirrorless Camera with 24-70mm Lens Kit",
+      "url": "https://www.ebay.in/itm/Nikon-Z5-Mirrorless-Camera-with-24-70mm-Lens-Kit/34567890133",
+      "total_review_count": "600",
+      "rating": "4.3",
+      "price": "119990",
+      "website": "https://ebay.in"
+    },
+    {
+      "id": "14",
+      "title": "Instant Pot Duo 7-in-1 Electric Pressure Cooker 6Qt",
+      "url": "https://www.ebay.in/itm/Instant-Pot-Duo-7-in-1-Electric-Pressure-Cooker-6Qt/45678901244",
+      "total_review_count": "7900",
+      "rating": "4.4",
+      "price": "7699",
+      "website": "https://ebay.in"
+    },
+    {
+      "id": "15",
+      "title": "Fitbit Charge 6 Fitness & Health Tracker",
+      "url": "https://www.ebay.in/itm/Fitbit-Charge-6-Fitness-Health-Tracker/56789012355",
+      "total_review_count": "2200",
+      "rating": "4.0",
+      "price": "12990",
+      "website": "https://ebay.in"
+    },
+    {
+      "id": "16",
+      "title": "Xbox Series X 1TB Console (Renewed Premium)",
+      "url": "https://www.ebay.in/itm/Xbox-Series-X-1TB-Console-Renewed-Premium/67890123466",
+      "total_review_count": "4000",
+      "rating": "4.5",
+      "price": "49990",
+      "website": "https://ebay.in"
+    },
+    {
+      "id": "17",
+      "title": "GoPro HERO12 Black - Waterproof Action Camera (New)",
+      "url": "https://www.ebay.in/itm/GoPro-HERO12-Black-Waterproof-Action-Camera-New/78901234577",
+      "total_review_count": "1100",
+      "rating": "4.2",
+      "price": "41990",
+      "website": "https://ebay.in"
+    },
+    {
+      "id": "18",
+      "title": "Dyson V15 Detect Absolute Cordless Vacuum Cleaner",
+      "url": "https://www.ebay.in/itm/Dyson-V15-Detect-Absolute-Cordless-Vacuum-Cleaner/89012345688",
+      "total_review_count": "2000",
+      "rating": "4.3",
+      "price": "53900",
+      "website": "https://ebay.in"
+    },
+    {
+      "id": "19",
+      "title": "HP LaserJet Pro M283fdw Wireless Color Laser Printer",
+      "url": "https://www.ebay.in/itm/HP-LaserJet-Pro-M283fdw-Wireless-Color-Laser-Printer/90123456799",
+      "total_review_count": "1500",
+      "rating": "4.0",
+      "price": "24999",
+      "website": "https://ebay.in"
+    },
+    {
+      "id": "20",
+      "title": "Logitech MX Master 3S Advanced Wireless Mouse",
+      "url": "https://www.ebay.in/itm/Logitech-MX-Master-3S-Advanced-Wireless-Mouse/01234567800",
+      "total_review_count": "3700",
+      "rating": "4.5",
+      "price": "8499",
       "website": "https://ebay.in"
     }
   ]

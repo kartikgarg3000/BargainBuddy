@@ -1,117 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Form Integration</title>
-  <style>
-    body {
-      background-color: #dfdcdc;
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      font-size: large;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BargainBuddy - Price Comparison</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4f46e5;
+            --secondary-color: #818cf8;
+            --background-color: #f3f4f6;
+            --card-background: #ffffff;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+        }
 
-    .h1{
-      align-self: center;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-    }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
 
-    .form-group {
-      margin-bottom: 15px;
-    }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
 
-    label {
-      display: flexbox;
-      margin-bottom: 20px;
-      font-weight: bold;
-    }
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            animation: fadeInDown 0.8s ease-out;
+        }
 
-    select,
-    input[type="checkbox"] {
-      width: 50%;
-      margin-top: 10px;
-      /* padding: 1px; */
-      margin-bottom: 1px;
-      border: 3px solid #ddd;
-      /* border-radius: 5px; */
-      /* box-sizing: border-box; */
-      margin-top: 1px;
-    }
+        .header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
 
-    .checkbox-group {
-      margin-top: 10px;
-      margin-bottom: 1px;
-      font-size: 18px;
-      padding-bottom: 10px;
-    }
+        .header p {
+            color: var(--text-secondary);
+        }
 
-    button {
-      width: 100%;
-      padding: 12px;
-      background-color: #4caf50;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  </style>
+        .card {
+            background: var(--card-background);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .select-wrapper {
+            position: relative;
+            margin-top: 0.5rem;
+        }
+
+        select {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 0.5rem;
+            appearance: none;
+            background-color: white;
+            font-size: 1rem;
+            color: var(--text-primary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        select:hover {
+            border-color: var(--primary-color);
+        }
+
+        select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+        }
+
+        .select-wrapper::after {
+            content: '▼';
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+            pointer-events: none;
+        }
+
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .checkbox-wrapper {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .checkbox-wrapper:hover {
+            background-color: #f9fafb;
+        }
+
+        .checkbox-wrapper input[type="checkbox"] {
+            width: 1.25rem;
+            height: 1.25rem;
+            margin-right: 0.5rem;
+            cursor: pointer;
+        }
+
+        .checkbox-wrapper label {
+            margin: 0;
+            cursor: pointer;
+            font-weight: normal;
+            text-transform: capitalize;
+        }
+
+        button {
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 640px) {
+            .container {
+                margin: 1rem auto;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .card {
+                padding: 1.5rem;
+            }
+
+            .checkbox-group {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Submit Data</h1>
-  
-    <form action="/compare" method="post">
-      <div class="form-group">
-        <label for="productSelect">Choose a Product:</label>
-        <select name="productSelect" id="productSelect">
-          <% productsArray.forEach((product, index) => { %>
-            <option value="<%= product.id %>"><%= product.name %></option>
-          <% }); %>
-        </select>
-      </div>
-      
-      <div class="form-group">
-        <label>Choose the websites:</label>
-        <% companiesArray.forEach((company, index) => { %>
-          <div class="checkbox-group">
-            <input type="checkbox" name="selectedCompanies" value="<%= company.id %>" checked>
-            <label><%= company.name %></label>
-          </div>
-        <% }); %>
-      </div>
+    <div class="container">
+        <header class="header">
+            <h1>BargainBuddy</h1>
+            <p>Compare prices across multiple platforms and find the best deals</p>
+        </header>
 
-      <div class="form-group">
-        <label for="sortBasis">Sort on the Basis of:</label>
-        <select name="sortBasis" id="sortBasis">
-          <option value="price">Price</option>
-          <option value="rating">Rating</option>
-          <option value="total_review_count">Total Review Count</option>
-        </select>
-      </div>
+        <div class="card">
+            <form action="/compare" method="post" id="comparisonForm">
+                <div class="form-group">
+                    <label for="productSelect">Select Product</label>
+                    <div class="select-wrapper">
+                        <select name="productSelect" id="productSelect" required>
+                            <% productsArray.forEach((product) => { %>
+                                <option value="<%= product.id %>"><%= product.name %></option>
+                            <% }); %>
+                        </select>
+                    </div>
+                </div>
 
-      <div class="form-group">
-        <label for="sortOrder">Sorting Order:</label>
-        <select name="sortOrder" id="sortOrder">
-          <option value="asc">Ascending</option>
-          <option value="desc">Descending</option>
-        </select>
-      </div>
+                <div class="form-group">
+                    <label>Select Platforms</label>
+                    <div class="checkbox-group">
+                        <% companiesArray.forEach((company) => { %>
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox" 
+                                       id="company<%= company.id %>" 
+                                       name="selectedCompanies" 
+                                       value="<%= company.id %>" 
+                                       checked>
+                                <label for="company<%= company.id %>"><%= company.name %></label>
+                            </div>
+                        <% }); %>
+                    </div>
+                </div>
 
-      <div class="form-group">
-        <label for="topN">Number of items to be shown:</label>
-        <select name="topN" id="topN">
-          <% for (let idx = 0; idx < companiesArray.length; idx++) { %>
-            <option value="<%= idx + 1 %>"><%= idx + 1 %></option>
-          <% } %>
-        </select>
-      </div>
-    
-      <button type="submit">Submit</button>
-    </form>
-  </div>
+                <div class="form-group">
+                    <label for="sortBasis">Sort By</label>
+                    <div class="select-wrapper">
+                        <select name="sortBasis" id="sortBasis">
+                            <option value="price">Price</option>
+                            <option value="rating">Rating</option>
+                            <option value="total_review_count">Review Count</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="sortOrder">Order</label>
+                    <div class="select-wrapper">
+                        <select name="sortOrder" id="sortOrder">
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Descending</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="topN">Number of Results</label>
+                    <div class="select-wrapper">
+                        <select name="topN" id="topN">
+                            <% for (let idx = 0; idx < companiesArray.length; idx++) { %>
+                                <option value="<%= idx + 1 %>"><%= idx + 1 %></option>
+                            <% } %>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit">
+                    <i class="fas fa-search"></i> Compare Prices
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Form validation
+        document.getElementById('comparisonForm').addEventListener('submit', function(e) {
+            const checkboxes = document.querySelectorAll('input[name="selectedCompanies"]');
+            const checked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+            
+            if (!checked) {
+                e.preventDefault();
+                alert('Please select at least one platform for comparison');
+            }
+        });
+
+        // Animate checkboxes
+        document.querySelectorAll('.checkbox-wrapper').forEach(wrapper => {
+            wrapper.addEventListener('change', function(e) {
+                if (e.target.checked) {
+                    wrapper.style.backgroundColor = '#f3f4f6';
+                } else {
+                    wrapper.style.backgroundColor = 'transparent';
+                }
+            });
+        });
+    </script>
+     <%- include('./footer') %> 
 </body>
 </html>

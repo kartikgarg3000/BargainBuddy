@@ -3,6 +3,7 @@
     "body-parser": "^2.2.0",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
+    "node-fetch": "^3.3.2",
     "nodemon": "^3.0.1"
   },
   "name": "Bargain Buddy",
@@ -18,5 +19,8 @@
     "url": "git+https://github.com/kartikgarg3000/BargainBuddy.git"
   },
   "author": "Kartik Garg",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
 }

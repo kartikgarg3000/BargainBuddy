@@ -1,0 +1,43 @@
+<footer class="footer">
+    <p>Made with <span class="heart">❤</span> by <a href="https://github.com/kartikgarg3000/BargainBuddy" class="author" target="_blank">Kartik Garg</a></p>
+    <p>&copy; <%= new Date().getFullYear() %> All Rights Reserved</p>
+</footer>
+
+<style>
+    .footer {
+        text-align: center;
+        padding: 2rem 1rem;
+        margin-top: 2rem;
+        color: var(--text-secondary);
+        animation: fadeInUp 0.8s ease-out;
+        background: var(--card-background);
+        border-radius: 0.5rem;
+        box-shadow: 0 -2px 4px -1px rgba(0, 0, 0, 0.05);
+    }
+
+    .footer p {
+        font-size: 0.875rem;
+    }
+
+    .footer .author {
+        color: var(--primary-color);
+        font-weight: 600;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footer .author:hover {
+        color: var(--secondary-color);
+    }
+
+    .footer .heart {
+        color: #ef4444;
+        display: inline-block;
+        animation: heartBeat 1.5s infinite;
+    }
+
+    @keyframes heartBeat {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+    }
+</style>

@@ -114,4 +114,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📫 Support
 
-For support, email kartikgarg.cse.205@gmail.com or create an issue in the repository.
+For support, email kartikgarg.cse.2025@gmail.com or create an issue in the repository.

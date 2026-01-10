@@ -1,308 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BargainBuddy - Price Comparison</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root {
-            --primary-color: #4f46e5;
-            --secondary-color: #818cf8;
-            --background-color: #f3f4f6;
-            --card-background: #ffffff;
-            --text-primary: #1f2937;
-            --text-secondary: #6b7280;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-primary);
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 2rem;
-            animation: fadeInDown 0.8s ease-out;
-        }
-
-        .header h1 {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
-
-        .header p {
-            color: var(--text-secondary);
-        }
-
-        .card {
-            background: var(--card-background);
-            border-radius: 1rem;
-            padding: 2rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            animation: fadeInUp 0.8s ease-out;
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: var(--text-primary);
-        }
-
-        .select-wrapper {
-            position: relative;
-            margin-top: 0.5rem;
-        }
-
-        select {
-            width: 100%;
-            padding: 0.75rem 1rem;
-            border: 2px solid #e5e7eb;
-            border-radius: 0.5rem;
-            appearance: none;
-            background-color: white;
-            font-size: 1rem;
-            color: var(--text-primary);
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        select:hover {
-            border-color: var(--primary-color);
-        }
-
-        select:focus {
-            outline: none;
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
-        }
-
-        .select-wrapper::after {
-            content: '▼';
-            position: absolute;
-            right: 1rem;
-            top: 50%;
-            transform: translateY(-50%);
-            color: var(--text-secondary);
-            pointer-events: none;
-        }
-
-        .checkbox-group {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            margin-top: 0.5rem;
-        }
-
-        .checkbox-wrapper {
-            display: flex;
-            align-items: center;
-            padding: 0.5rem;
-            border-radius: 0.5rem;
-            transition: all 0.3s ease;
-        }
-
-        .checkbox-wrapper:hover {
-            background-color: #f9fafb;
-        }
-
-        .checkbox-wrapper input[type="checkbox"] {
-            width: 1.25rem;
-            height: 1.25rem;
-            margin-right: 0.5rem;
-            cursor: pointer;
-        }
-
-        .checkbox-wrapper label {
-            margin: 0;
-            cursor: pointer;
-            font-weight: normal;
-            text-transform: capitalize;
-        }
-
-        button {
-            width: 100%;
-            padding: 1rem;
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            border-radius: 0.5rem;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        button:hover {
-            background-color: var(--secondary-color);
-            transform: translateY(-2px);
-        }
-
-        button:active {
-            transform: translateY(0);
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Responsive Design */
-        @media (max-width: 640px) {
-            .container {
-                margin: 1rem auto;
-            }
-
-            .header h1 {
-                font-size: 2rem;
-            }
-
-            .card {
-                padding: 1.5rem;
-            }
-
-            .checkbox-group {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header class="header">
-            <h1>BargainBuddy</h1>
-            <p>Compare prices across multiple platforms and find the best deals</p>
-        </header>
-
-        <div class="card">
-            <form action="/compare" method="post" id="comparisonForm">
-                <div class="form-group">
-                    <label for="productSelect">Select Product</label>
-                    <div class="select-wrapper">
-                        <select name="productSelect" id="productSelect" required>
-                            <% productsArray.forEach((product) => { %>
-                                <option value="<%= product.id %>"><%= product.name %></option>
-                            <% }); %>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label>Select Platforms</label>
-                    <div class="checkbox-group">
-                        <% companiesArray.forEach((company) => { %>
-                            <div class="checkbox-wrapper">
-                                <input type="checkbox" 
-                                       id="company<%= company.id %>" 
-                                       name="selectedCompanies" 
-                                       value="<%= company.id %>" 
-                                       checked>
-                                <label for="company<%= company.id %>"><%= company.name %></label>
-                            </div>
-                        <% }); %>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="sortBasis">Sort By</label>
-                    <div class="select-wrapper">
-                        <select name="sortBasis" id="sortBasis">
-                            <option value="price">Price</option>
-                            <option value="rating">Rating</option>
-                            <option value="total_review_count">Review Count</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="sortOrder">Order</label>
-                    <div class="select-wrapper">
-                        <select name="sortOrder" id="sortOrder">
-                            <option value="asc">Ascending</option>
-                            <option value="desc">Descending</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="topN">Number of Results</label>
-                    <div class="select-wrapper">
-                        <select name="topN" id="topN">
-                            <% for (let idx = 0; idx < companiesArray.length; idx++) { %>
-                                <option value="<%= idx + 1 %>"><%= idx + 1 %></option>
-                            <% } %>
-                        </select>
-                    </div>
-                </div>
-
-                <button type="submit">
-                    <i class="fas fa-search"></i> Compare Prices
-                </button>
-            </form>
-        </div>
-    </div>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>BargainBuddy – Smart Price Comparison</title>
+    
+    <!-- Tailwind + Font -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
     <script>
-        // Form validation
-        document.getElementById('comparisonForm').addEventListener('submit', function(e) {
-            const checkboxes = document.querySelectorAll('input[name="selectedCompanies"]');
-            const checked = Array.from(checkboxes).some(checkbox => checkbox.checked);
-            
-            if (!checked) {
-                e.preventDefault();
-                alert('Please select at least one platform for comparison');
-            }
-        });
-
-        // Animate checkboxes
-        document.querySelectorAll('.checkbox-wrapper').forEach(wrapper => {
-            wrapper.addEventListener('change', function(e) {
-                if (e.target.checked) {
-                    wrapper.style.backgroundColor = '#f3f4f6';
-                } else {
-                    wrapper.style.backgroundColor = 'transparent';
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                        },
+                    },
                 }
-            });
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 min-h-screen antialiased">
+
+    <!-- Header -->
+    <header class="bg-white border-b shadow-sm sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-md">
+                    BB
+                </div>
+                <h1 class="text-2xl font-bold text-gray-900">BargainBuddy</h1>
+            </div>
+            <a href="https://github.com/kartikgarg3000/BargainBuddy" target="_blank"
+               class="text-gray-600 hover:text-indigo-600 transition-colors flex items-center gap-2">
+                <i class="fab fa-github text-xl"></i>
+                <span class="hidden sm:inline">Source</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        
+        <!-- Hero / Intro -->
+        <div class="text-center mb-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                Find the <span class="text-indigo-600">Best Deal</span> Instantly
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Compare prices, ratings & reviews across multiple platforms in real-time
+            </p>
+        </div>
+
+        <!-- Main Card -->
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+            <div class="p-6 md:p-10">
+                <form action="/compare" method="POST" id="comparisonForm" class="space-y-8">
+
+                    <!-- Product Selection -->
+                    <div>
+                        <label for="productSelect" class="block text-lg font-semibold text-gray-800 mb-3">
+                            What are you looking for?
+                        </label>
+                        <div class="relative">
+                            <select 
+                                name="productSelect" 
+                                id="productSelect" 
+                                required
+                                class="w-full px-5 py-4 bg-gray-50 border border-gray-300 text-gray-900 rounded-xl 
+                                       focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all
+                                       appearance-none cursor-pointer text-base">
+                                <option value="" disabled selected>Select a product...</option>
+                                <% productsArray.forEach((product) => { %>
+                                    <option value="<%= product.id %>"><%= product.name %></option>
+                                <% }); %>
+                            </select>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-500">
+                                <i class="fas fa-chevron-down text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Platforms -->
+                    <div>
+                        <label class="block text-lg font-semibold text-gray-800 mb-3">
+                            Compare on these platforms
+                        </label>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                            <% companiesArray.forEach((company) => { %>
+                                <label class="group flex items-center gap-3 p-4 rounded-xl border border-gray-200 
+                                             hover:border-indigo-300 hover:bg-indigo-50/40 transition-all cursor-pointer">
+                                    <input 
+                                        type="checkbox" 
+                                        id="company<%= company.id %>" 
+                                        name="selectedCompanies" 
+                                        value="<%= company.id %>" 
+                                        class="w-5 h-5 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
+                                        checked>
+                                    <span class="text-gray-800 font-medium group-hover:text-indigo-700">
+                                        <%= company.name %>
+                                    </span>
+                                </label>
+                            <% }); %>
+                        </div>
+                    </div>
+
+                    <!-- Sorting & Results Options (2-column layout) -->
+                    <div class="grid md:grid-cols-3 gap-6">
+
+                        <div>
+                            <label for="sortBasis" class="block text-sm font-medium text-gray-700 mb-2">Sort by</label>
+                            <select name="sortBasis" id="sortBasis" 
+                                    class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                                <option value="price">Price</option>
+                                <option value="rating">Rating</option>
+                                <option value="total_review_count">Review Count</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="sortOrder" class="block text-sm font-medium text-gray-700 mb-2">Order</label>
+                            <select name="sortOrder" id="sortOrder" 
+                                    class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                                <option value="asc">Low to High</option>
+                                <option value="desc">High to Low</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="topN" class="block text-sm font-medium text-gray-700 mb-2">Show top</label>
+                            <select name="topN" id="topN" 
+                                    class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                                <% for (let i = 1; i <= companiesArray.length; i++) { %>
+                                    <option value="<%= i %>"><%= i %> result<% if(i > 1) { %>s<% } %></option>
+                                <% } %>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="pt-4">
+                        <button 
+                            type="submit"
+                            id="submitBtn"
+                            class="w-full py-4 px-6 bg-indigo-600 hover:bg-indigo-700 
+                                   text-white font-semibold text-lg rounded-xl
+                                   transition-all duration-200 shadow-lg hover:shadow-xl
+                                   focus:outline-none focus:ring-4 focus:ring-indigo-300
+                                   disabled:opacity-60 disabled:cursor-not-allowed
+                                   flex items-center justify-center gap-3">
+                            <i class="fas fa-bolt"></i>
+                            Find Best Deals
+                        </button>
+                    </div>
+
+                    <!-- Loading state -->
+                    <div id="loadingState" class="hidden text-center py-6">
+                        <div class="inline-block animate-spin rounded-full h-10 w-10 border-4 border-indigo-200 border-t-indigo-600"></div>
+                        <p class="mt-4 text-gray-600 font-medium">Searching best prices across platforms...</p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        const form = document.getElementById('comparisonForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const loading = document.getElementById('loadingState');
+
+        form.addEventListener('submit', function(e) {
+            const checked = Array.from(document.querySelectorAll('input[name="selectedCompanies"]:checked')).length;
+            
+            if (checked === 0) {
+                e.preventDefault();
+                alert('Please select at least one platform to compare');
+                return;
+            }
+
+            // Show loading
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner animate-spin"></i> Comparing...';
+            loading.classList.remove('hidden');
         });
     </script>
-     <%- include('./footer') %> 
+
 </body>
 </html>
